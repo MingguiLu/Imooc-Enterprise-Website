@@ -26,6 +26,7 @@ body{
 	list-style-image:url(../images/arrow.jpg);
 	float:right;
 	width:80px;
+	height:27px;
 	line-height:27px;
 }
 
@@ -60,6 +61,7 @@ body{
 	float:right;
 	line-height:80px;
 	background:#FFFFFF;
+	overflow:hidden;
 }
 
 .logo_right img{
