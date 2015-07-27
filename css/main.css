@@ -51,28 +51,24 @@ body{
 /*logo 开始*/
 .logo{
 	width:1000px;
+	overflow:hidden;
 	background:#ffffff;
 }
 .logo_left{
 	height:80px;
-	width:700px;
+	width:650px;
 	float:left;
 }
 
 .logo_right{
 	height:80px;
-	width:300px;
+	width:280px;
 	float:right;
 	line-height:80px;
-/*	background:url(../images/tel.jpg) left center no-repeat;*/
+	padding-left:38px;
+	background:url(../images/tel.jpg) left center no-repeat;
 	overflow:hidden;
 }
-
-.logo_right img{
-	vertical-align:middle;
-	margin-right:10px;
-}
-
 .logo_right span{
 	font-size:18px;
 	color:#CA394A;
