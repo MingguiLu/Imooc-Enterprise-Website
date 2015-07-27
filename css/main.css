@@ -45,14 +45,18 @@ body{
 .wrap{
 	width:1000px;
 	margin:0 auto;
+	overflow:hidden
 }
 
 /*logo 开始*/
+.logo{
+	width:1000px;
+	background:#ffffff;
+}
 .logo_left{
 	height:80px;
 	width:700px;
 	float:left;
-	background:#FFFFFF;
 }
 
 .logo_right{
@@ -60,7 +64,7 @@ body{
 	width:300px;
 	float:right;
 	line-height:80px;
-	background:#FFFFFF;
+/*	background:url(../images/tel.jpg) left center no-repeat;*/
 	overflow:hidden;
 }
 
@@ -72,7 +76,6 @@ body{
 .logo_right span{
 	font-size:18px;
 	color:#CA394A;
-	background:#FFFFFF;
 }
 /*logo 结束*/
 
@@ -112,6 +115,7 @@ body{
 
 .nav_middle_right{
 	width:300px;
+	overflow:hidden
 }
 
 .nav_middle_left, .nav_middle_right{
@@ -183,6 +187,7 @@ body{
 .sidebar{
 	width:230px;
 	clear:right;
+	overflow:hidden;
 }
 
 .news,.products,.sidebar{
@@ -310,18 +315,13 @@ body{
 	list-style-type:none;
 	float:left;
 	width:200px;
+	font-size:16px;
+	color:#999;
 	line-height:30px;
 	text-align:center;
 	background:url(../images/line.png) no-repeat right center;
+	overflow:hidden;
 }
-
-.copyright ul li{
-	float:left;
-	width:200px;
-	font-size:16px;
-	color:#999;
-}
-
 .copyright ul li ul li a:link,.copyright ul li ul li a:visited{
 	font-size:16px;
 	color:#999;
