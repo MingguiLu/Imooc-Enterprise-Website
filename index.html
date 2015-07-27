@@ -21,6 +21,17 @@
 		});
 
 	</script>
+
+	<script type="text/javascript">
+	 function showNav(li){
+	 	var secondNav = li.getElementsByTagName("ul")[0];
+	 	secondNav.style.display="block";
+	 }
+	 function hideNav(li){
+	 	var secondNav = li.getElementsByTagName("ul")[0];
+	 	secondNav.style.display="none";
+	 }
+	</script>
 </head>
 
 <body>
@@ -60,8 +71,24 @@
 						<li><a href="list.html">首页</a></li>
 						<li><a href="list.html">关于慕课</a></li>
 						<li><a href="list.html">新闻动态</a></li>
-						<li><a href="list.html">课程中心</a></li>
-						<li><a href="list.html">在线课程</a></li>
+						<li onmouseover="showNav(this)" onmouseout="hideNav(this)"><a href="list.html">课程中心</a>
+							<ul name="secondNav">
+								<li><a href="#">HTML+CSS</a></li>
+								<li><a href="#">javaScript</a></li>
+								<li><a href="#">jQuery</a></li>
+								<li><a href="#">Bootstrap</a></li>
+								<li><a href="#">Node.js</a></li>
+							</ul>
+						</li>
+						<li onmouseover="showNav(this)" onmouseout="hideNav(this)"><a href="list.html">在线课程</a>
+							<ul name="secondNav" >
+								<li><a href="#">前端开发</a></li>
+								<li><a href="#">后端开发</a></li>
+								<li><a href="#">移动开发</a></li>
+								<li><a href="#">数据开发</a></li>
+								<li><a href="#">图像处理</a></li>
+							</ul>
+						</li>
 						<li><a href="list.html">人才招聘</a></li>
 					</ul>
 				</div>

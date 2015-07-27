@@ -95,7 +95,6 @@ body{
 	width:980px;
 	line-height:40px;
 	background:url(../images/nav_bg.jpg) repeat-x;
-	overflow:hidden;
 }
 
 .nav_right{
@@ -124,23 +123,47 @@ body{
 	display:inline;
 }
 
-.nav_middle li{
+.nav_middle  ul li{
 	list-style-type:none;
 	float:left;
 	width:100px;
 	text-align:center;
+	position:relative;
+}
+.nav_middle_left ul li a{
+	font-size:18px;
 }
 
-.nav_middle_left a:link, .nav_middle_left a:visited{
-	font-size:18px;
+.nav_middle_left ul li a:link, .nav_middle_left  ul li a:visited{
 	color:#FFFFFF;
 	text-decoration:none;
 }
 
-.nav_middle_left a:hover, .nav_middle_left a:active{
-	font-size:18px;
+.nav_middle_left  ul li a:hover, .nav_middle_left  ul li a:active{
 	color:#FFFF00;
 	text-decoration:none;
+}
+
+.nav_middle_left ul li ul{
+	z-index:99;
+	position:absolute;
+	left:0;
+	top:39px;
+	display:none;
+}
+.nav_middle_left ul li ul li{
+	float:none;
+	background:#776E67;
+	background:rgba(0,0,0,0.2) none repeat scroll !important; /*实现FF背景透明，文字不透明*/
+	background:#000; filter:Alpha(opacity=20);/*实现IE背景透明  待验证*/ 
+}
+
+.nav_middle_left ul li ul li a{
+	font-size:14px;
+	height:40px;
+	line-height: 40px;
+	display:inline-block;
+	color:#FFF;
 }
 
 .search_text{
@@ -321,6 +344,9 @@ body{
 	text-align:center;
 	background:url(../images/line.png) no-repeat right center;
 	overflow:hidden;
+}
+.coppyright ul li:last-child{
+	background:none;
 }
 .copyright ul li ul li a:link,.copyright ul li ul li a:visited{
 	font-size:16px;
